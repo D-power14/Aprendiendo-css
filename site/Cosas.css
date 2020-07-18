@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive,Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+/* este comentario es para indicar que lo de abajo es lo de texto con fondo y sombra*/
+
+h2 {
+    background-color: aqua;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    border: 10px solid #000000;
+    box-shadow: 1px 2px 15px 0 #000000;
+    text-shadow: 2px 2px 7px #fff;
+    transform: rotate(-45deg);/*deg es para grados*/
+}
+
+/* recuerda el fucking box model!!, tambien los bordes que es border(tamaño,solid y el color
+box-shadow para sombra bonita, px para arriba-abajo,px para los lados,px para la sombra o porque si y el color,
+se puede duplicar si pego lo que va adentro de box-shadow en box-shado*/
+
+.caja1, .cajas2{
+    width: 200px;
+    height: 200px;
+    opacity: 0.2;/*es la opacidad de donde pongamos el atributo*/ 
+}
+
+/*si tengo 2 cosas con los mismos elementos puedo poner coma y con solo una vez puedo ponerle los elementos a los 2*/
+/*recordemos los position, es lo de left,bottom,left,right y asi, es como el border xd,top y left tienen prioridad siempre excepto que metamos un !important*/
+/* z-index es lo de la prioridad,siempre hacerlo con cantidades grandes,minimo 50 uwu*/
+/*recordar el ejm del cafe para el position:relative, dos tazas pueden ponerse una arriba de otra, eso porque una de ellas tiene mas z-index que la otra, sin embargo,
+la taza no puede ponerse encima de lo que tiene adentro,solo que al contenido se le ponga z-index en numeros negativos*/
+
